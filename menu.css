@@ -1,4 +1,65 @@
+@import url("head-foot.css");
+/* add this to every css page instead. */
+
+.card r{
+    color: var(--red-accent);
+    transform: translateX(-150%) translateY(100%);
+    display: flex;
 }
+#reflected{
+    transform: scaleX(-1);
+}
+
+#desc{
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;    
+}
+
+
+#pop{
+    display: none;
+}
+ #pop:checked + .popout{
+    opacity: 1;
+}
+
+.popout{
+    overflow: visible;
+    display: block;
+    position: sticky;
+    opacity: 0;
+    top: 0;
+}
+.popout img{
+    width: clamp(25px, 50%, 400px);
+    height: clamp(10px, 30%, 250px);
+}
+.popout label{
+    padding: .5dvw;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid #000;
+}
+.popout label:hover{
+    background-color: rgb(248,248,248);
+    color: var(--red-accent);
+    cursor: pointer;
+}
+
+@media (min-width: 480px) { /* for  laptop, monitor, tablet, etc */
+    h2{
+        display: flex;
+        justify-content: center;
+        font-size: 200%;
+    }
+    h1{
+        padding-left: 1dvw;
+        
+        
+    }
     .perfect-match{
         display: flex;
         justify-content: center;
@@ -301,5 +362,3 @@
         transition-duration: .2s;
     }
 }
-
-
