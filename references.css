@@ -1,0 +1,53 @@
+@import url("head-foot.css");
+/* add this to every css page instead. */
+
+a:visited{
+    text-decoration: none;
+}
+a:link{
+    text-decoration: none;
+}
+
+.hold{
+    margin-top: clamp(10px, 20%, 25px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card{
+    border: 2px solid #000;
+    border-radius: 2%;
+    width: 40%;
+    height:50dvw;
+    margin-bottom: 10%;
+}
+.card h1{
+    justify-self: center;
+    text-align: center;
+    width: 95%;
+    border-bottom: 2px solid #000;
+}
+.card iframe{
+    display: flex;
+    width: 90%;
+    height: 70%;
+    justify-self: center;
+    border-bottom: 2px solid #000;
+}
+.card button{
+    display: flex;
+    justify-self: center;
+    padding: 1dvw;
+    background: #fff;
+    color: #000;
+    font-size: clamp(1rem, 1.5dvw, 1.8rem);
+    border: 2px solid #000;
+    border-radius: 20%;
+    transition-duration: .2s;
+}
+.card button:hover{
+    background-color: rgb(250, 250, 255);
+    box-shadow: .2dvw .2dvw #000;
+    cursor: pointer;
+}
