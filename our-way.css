@@ -1,0 +1,131 @@
+@import url("head-foot.css");
+/* add this to every css page instead. */
+
+#reflected{
+    transform: scaleX(-1);
+}
+h3{
+    display: flex;
+    justify-content: center;
+}
+
+p, p1{
+    
+}
+
+@media (min-width: 480px) { /* for  laptop, monitor, tablet, etc */
+    h2{
+        text-align: center;
+        font-size: clamp(20px, 4dvw, 35px);
+    }
+    
+    .Our-way{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top:5dvw;
+    }
+    .Our-way img{
+        height: clamp(30px, 7dvw, 80px);
+        width: clamp(120px, 28dvw, 350px);
+    }
+    .Our-way h2{
+        font-size: clamp(23px, 4dvw, 45px);
+    }
+    
+    .text{
+        margin-bottom: clamp(30px, 5dvw, 50px);
+    }
+    .text h2{
+        justify-self: center;
+        font-size: clamp(1.8rem, 5dvw, 2.5rem);
+        width: clamp(350px, 60dvw, 500px);
+        border-bottom: 2px solid #000;
+    }
+    .text h3{
+        width: 95%;
+        justify-self: center;
+        font-size: clamp(1.1rem, 2.5dvw, 1.5rem);
+    }
+    .text ul{
+        justify-self: center;
+        width: 85%;
+    }
+    .text #dash{
+        padding-top: .5dvw;
+        padding-bottom: .5dvw;
+        border-top: 1px dashed var(--red-accent);
+        border-bottom: 1px dashed var(--red-accent);
+    }
+    .text li{
+        font-size: clamp(1rem, 2dvw, 1.2rem);
+        padding-bottom: clamp(7px, .4dvw, 15px);
+    }
+}
+
+@media (max-width: 480px) { /* for phones/similar sized devices */
+    h2{
+        justify-content: center;
+        font-size: 200%;
+    }
+    
+    .Our-way{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top:5dvw;
+        margin-bottom: 5dvw;
+    }
+    .Our-way img{
+        height:7dvw;
+        width:30dvw;
+    }
+    .Our-way h2{
+        position: absolute;
+        transform: translateY(6dvw);
+        font-size: clamp(20px, 7dvw, 30px);
+    }
+    
+    .text{
+        margin-top: 20dvw;
+        margin-bottom:15dvw;
+    }
+    .text h2{
+        text-align: center;
+        justify-self: center;
+        font-size: 1.5rem;
+        width: 300px;
+        border-bottom: 2px solid #000;
+    }
+    .text h3{
+        width: 95%;
+        justify-self: center;
+        font-size: clamp(1.05rem, 2.5dvw, 1.5rem);
+    }
+    .text ul{
+        justify-self: center;
+        width: 85%;
+    }
+    .text li{
+        font-size: clamp(.9rem, 2dvw, 1.2rem);
+        padding-bottom: clamp(7px, .4dvw, 15px);
+    }
+}
+
+@media (max-width: 358px) { /* for small phones/devices */
+    .Our-way{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top:5dvw;
+    }
+    .Our-way img{
+        height:8dvw;
+        width:36dvw;
+    }
+    .Our-way h2{
+        transform: translateY(6.5dvw);
+        font-size: 24px;
+    }
+    
+}
