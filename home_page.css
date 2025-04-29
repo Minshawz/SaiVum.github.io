@@ -1,0 +1,518 @@
+@import url("head-foot.css");
+/* add this to every css page instead. */
+
+#desc{
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;    
+}
+.card r{
+    color: var(--red-accent);
+    transform: translateX(-150%) translateY(100%);
+    display: flex;
+}
+
+
+
+@media (min-width: 480px) { /* tablet, desktop, similar */
+    
+    .hero-section{
+        display: flex;
+        overflow: hidden;
+        padding-top: 5dvw;
+        background-color: var(--tan-background);
+        width: 90%;
+        margin-bottom: 8dvw;
+    }
+    .hero-section p{
+        width: 40%;
+        margin-left: 3%;
+        font-size: clamp(20px, 3dvw, 3.5dvw);
+        font-family: "Solway";
+    }
+    .hero-section img{
+        width: 40dvw;
+        height: 20dvw;
+        margin-left: 2dvw;
+    }
+    
+    .why-us{
+        display: box;
+    }
+    .why-us h2{
+        font-size: clamp(3dvw, 6dvw, 120px);
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .why-us p{
+        display: block;
+        margin: auto;
+        margin-top: 2dvw;
+        margin-bottom: 2dvw;
+        width: 50%;
+        font-size: clamp(1.5dvw, 2.5dvw, 55px);
+        text-align: center;
+    }
+    .why-us img{
+        padding-left: clamp(20px ,7dvw, 8dvw);
+        padding-right: clamp(20px ,7dvw, 8dvw);
+        width: 16dvw;
+        height: 16dvw;
+    }
+    
+    h3{
+        font-size: clamp(3dvw, 6dvw, 120px);
+        text-align: center;
+        margin-bottom: 4dvw;
+        margin-top: 4dvw;
+    }
+    .done-properly{
+        display: flex;
+        justify-content: center;
+        background-color: var(--gray-background);
+        border-top: clamp(.2dvw, .4dvw, 4px) solid var(--red-accent);
+        border-bottom: clamp(.2dvw, .4dvw, 4px) solid var(--red-accent);
+    }
+    .done-properly img{
+        display: inline;
+        padding-left: 1dvw;
+        padding-right: 1dvw;
+        width: 10dvw;
+        height: 10dvw;
+    }
+    
+    .top-picks{
+        overflow: scroll;
+        margin-bottom: 10%;
+    }
+    .top-picks h2{
+        font-size: clamp(1.5rem, 4dvw, 2.5rem);
+        display: flex;
+        padding: .5dvw;
+        justify-self: center;
+        border-bottom: 2px solid #000;
+    }
+    .card-container{
+        display: grid;
+        justify-content: space-around;
+        gap: 1dvw;
+        grid-auto-flow: column;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        overflow: scroll;
+    }
+    .card{
+        width: clamp(140px, 18dvw, 200px);
+        padding-bottom: 10px;
+        height: clamp(195px, 29dvw, 245px); 
+        background: #fff;
+        border-radius: 5%;
+        overflow: clip;
+        border: 2px solid black;
+        
+    }
+    .card:has(input:checked){
+        height: auto;
+    }
+    .card img{
+        border-radius: 0;
+        width: clamp(140px, 18dvw, 200px);
+        height: clamp(100px, 15dvw, 150px);
+    }
+    .card a img{
+        margin-right: 5%;
+        padding: 3px;
+        border-radius: 50%;
+        float: right;
+        width: 20px;
+        height: 20px;
+    }
+    .card a img:hover{
+        border: 1px dashed #000;
+    }
+    .card a:hover + span{
+        opacity: 1;
+    }
+    .card input{
+        display: none;
+    }
+    #extra{
+        display: none;
+    }
+    .card label{
+        border-radius: 20%;
+        font-style: italic;
+        padding: 9px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-left: 10%;
+        margin-bottom: 10px;
+        background-color: rgb(210,210,210);
+        color: rgb(0,0,50);
+        transition-duration: .3s;
+    }
+    .card input:checked ~ #extra{
+        display: flex;
+    }
+    .card input:checked + i{
+        opacity: 0;
+    }
+    .card label:hover{
+        border: 1px dashed #000;
+        background-color: #fff;
+        color: var(--red-accent);
+        cursor: pointer;
+    }
+    .card h1{
+        display: flex;
+        font-size: 110%;
+        justify-content: center;
+        text-align: center;
+    }
+    .card p{
+        width: 120%;
+        padding: 5%;
+        padding-bottom: 0%;
+    }
+    .card i{
+        margin-left: 5px;
+        font-size: .8rem;
+        transition-duration: .2s;
+    }
+
+}
+
+
+@media (max-width: 480px) { /* phone, similar */
+    
+    .hero-section{
+        display: box;
+        overflow: hidden;
+        padding-top: 5dvw;
+        margin-bottom: 5rem;
+        background-color: #fff;
+        font-size: clamp(1.1rem, 1.3rem, 1.5rem);
+    }
+    .hero-section p{
+        width: 70%;
+        margin-left: 3%;
+        font-size: 8dvw;
+        font-family: "Solway";
+    }
+    .hero-section img{
+        width: 80dvw;
+        height: 40dvw;
+        margin-left: 5%;
+    }
+    
+    .why-us{
+        display: box;
+    }
+    .why-us h2{
+        font-size: 12dvw;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .why-us p{
+        font-size: 6.5dvw;
+        text-align: center;
+    }
+    .why-us img{
+        display: box;
+        padding: 1dvw;
+        width: 27.5dvw;
+        height: 27.5dvw;
+    }
+    
+    h3{
+        font-size: 12dvw;
+        text-align: center;
+        margin-bottom: 4dvw;
+    }
+    .done-properly{
+        display: flex;
+        background-color: var(--gray-background);
+        border-top: .8dvw solid var(--red-accent);
+        border-bottom: .8dvw solid var(--red-accent);
+    }
+    .done-properly ul{
+        margin: auto;
+    }
+    .done-properly img{
+        display: inline;
+        margin-left: .5dvw;
+        margin-right: .5dvw;
+        width: 18dvw;
+        height: 18dvw;
+    }
+    
+    .top-picks{
+        margin-bottom: 20%;
+        overflow: scroll;
+    }
+    .card-container{
+        display: grid;
+        gap: 1dvw;
+        grid-auto-flow: column;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        overflow: scroll;
+    }
+    .card{
+        width: clamp(120px, 18dvw, 200px);
+        padding-bottom: 10px;
+        height: 185px;
+        background: #fff;
+        border-radius: 5%;
+        border: 2px solid black;
+        overflow: hidden;
+    }
+    .card:has(input:checked){
+        height: auto;
+    }
+    .card img{
+        border-radius: 0;
+        width: clamp(120px, 18dvw, 200px);
+        height: clamp(90px, 16dvw, 150px);
+    }
+    .card a img{
+        margin-right: 5%;
+        border-radius: 50%;
+        padding: 3px;
+        float: right;
+        border: 1px solid #000;
+        width: 17px;
+        height: 17px;
+    }
+    .card input{
+        display: none;
+    }
+    #extra{
+        display: none;
+    }
+    .card label{
+        border-radius: 20%;
+        font-style: italic;
+        padding: 9px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-left: 8%;
+        margin-bottom: 10px;
+        background-color: rgb(210,210,210);
+        color: rgb(0,0,50);
+        transition-duration: .3s;
+    }
+    .card input:checked ~ #extra{
+        display: flex;
+    }
+    .card input:checked + i{
+        opacity: 0;
+    }
+    .card label:hover{
+        background-color: #fff;
+        border: 1px dashed #000;
+        color: var(--red-accent);
+        cursor: pointer;
+    }
+    .card h1{
+        display: flex;
+        font-size: 110%;
+        justify-content: space-around; 
+    }
+    .card p{
+        width: 125%;
+        padding: 5%;
+        padding-bottom: 0%;
+    }
+    .card i{
+        margin-left: 5px;
+        font-size: .8rem;
+        transition-duration: .2s;
+    }
+}
+
+@media (max-width: 358px) { /* small mobile, similar */
+    
+    .hero-section{
+        display: box;
+        overflow: hidden;
+        padding-top: 5dvw;
+        margin-bottom: 5rem;
+        background-color: #fff;
+        font-size: clamp(8px, 1rem, 12px);
+    }
+    .hero-section p{
+        width: 70%;
+        margin-left: 3%;
+        font-size: 7dvw;
+        font-family: "Solway";
+    }
+    .hero-section img{
+        width: 80dvw;
+        height: 40dvw;
+        margin-left: 5%;
+    }
+    
+    .why-us{
+        display: box;
+    }
+    .why-us h2{
+        font-size: 11dvw;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .why-us p{
+        font-size: 6dvw;
+        text-align: center;
+    }
+    .why-us img{
+        display: box;
+        padding: 2dvw;
+        width: 25dvw;
+        height: 25dvw;
+    }
+    
+    h3{
+        font-size: 11dvw;
+        text-align: center;
+        margin-bottom: 4dvw;
+    }
+    .done-properly{
+        display: flex;
+        background-color: var(--gray-background);
+        border-top: 2px solid var(--red-accent);
+        border-bottom: 2px solid var(--red-accent);
+    }
+    .done-properly ul{
+        padding-top: 3px;
+        margin: auto;
+    }
+    .done-properly img{
+        display: inline;
+        margin-left: .5dvw;
+        margin-right: .5dvw;
+        width: 16dvw;
+        height: 16dvw;
+    }
+    
+    .top-picks{
+        overflow: scroll;
+        margin-bottom: 20%;
+    }
+    .card-container{
+        display: grid;
+        gap: 1dvw;
+        grid-auto-flow: column;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        overflow: scroll;
+    }
+    .card{
+        width: clamp(100px, 17dvw, 180px);
+        padding-bottom: 10px;
+        height: 158px;
+        background: #fff;
+        border-radius: 5%;
+        border: 2px solid black;
+        overflow: hidden;
+    }
+    .card:has(input:checked){
+        height: auto;
+    }
+    .card img{
+        border-radius: 0;
+        width: clamp(100px, 17dvw, 180px);
+        height: clamp(70px, 15dvw, 130px);
+    }
+    .card a img{
+        margin-right: 4%;
+        border-radius: 50%;
+        padding: 3px;
+        float: right;
+        border: 1px solid #000;
+        width: 15px;
+        height: 15px;
+    }
+    .card input{
+        display: none;
+    }
+    #extra{
+        display: none;
+    }
+    .card label{
+        border-radius: 20%;
+        font-style: italic;
+        padding: 9px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-left: 5%;
+        margin-bottom: 10px;
+        border-color: rgb(210,210,210);
+        color: rgb(0,0,50);
+        transition-duration: .3s;
+    }
+    .card input:checked ~ #extra{
+        display: flex;
+    }
+    .card input:checked + i{
+        opacity: 0;
+    }
+    .card label:hover{
+        border: 1px dashed #000;
+        background-color: #fff;
+        color: var(--red-accent);
+        cursor: pointer;
+    }
+    .card h1{
+        display: flex;
+        font-size: 100%;
+        justify-content: space-around; 
+    }
+    .card p{
+        width: 125%;
+        padding: 5%;
+        padding-bottom: 0%;
+    }
+    .card i{
+        margin-left: 5px;
+        font-size: .6rem;
+        transition-duration: .2s;
+    }
+    
+    /* Make card look smoother */
+    .card {
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+
+    /* Smooth scroll for entire page */
+    html {
+         scroll-behavior: smooth;
+    }
+
+    /* Make buttons nicer */
+   button {
+    background-color: var(--red-accent);
+    color: white;
+    border: none;
+    padding: 1em 100em; /* Bigger padding */
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.5 rem; /* Bigger text */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: darkred;
+    transform: scale(1.05); /* Optional: makes it grow slightly when hovered */
+}
+
+}
