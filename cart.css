@@ -1,0 +1,390 @@
+@import url("head-foot.css");
+/* add this to every css page instead. */
+
+.card r{
+    color: var(--red-accent);
+    transform: translateX(-100%) translateY(100%);
+    display: flex;
+}
+
+#reflected{
+    transform: scaleX(-1);
+}
+
+#cart-display{
+    width: 100%;
+}
+#cart-display li{
+    block
+    width: 100%;
+    background-color: rgb(250,250,250);
+    margin: 1dvw;
+    border-radius: 1dvw;
+    padding: 1dvw;
+    border: 1px solid #000;
+}
+#cart-display strong{
+    font-size: 1.3rem;
+}
+#cart-display img{
+    border: 2px solid var(--red-accent);
+}
+#cart-display p{
+    border-top: 1px dashed var(--red-accent);
+    padding-top: 1dvw;
+    width: 85%;
+}
+#cart-display button{
+    float: right;
+    transform: translateY(-120%);
+    background: #fff;
+    margin-bottom: 2dvw;
+    padding: .5dvw;
+    border-radius: 1dvw;
+    transition-duration: .2s;
+}
+#cart-display button:hover{
+    background: var(--red-accent);
+    color: white;
+    cursor: pointer;
+}
+
+#pay{
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    width: 150px;
+    padding: 1dvw;
+    justify-self: center;
+    display: box;
+    text-align: center;
+    margin-bottom: clamp(10px, 5dvw, 50px);
+}
+#pay button{
+    opacity: 0;
+    background-color: var(--red-accent);
+    font-size: clamp(1rem, 2dvw, 1.2rem);
+    color: #fff;
+    border: 2px solid #000;
+    border-radius: 2dvw;
+    padding: clamp(5px, 1.2dvw, 12px);
+    margin: 1dvw;
+    transition-duration: .2s;
+}
+#pay button:hover{
+    background-color: rgb(180, 37, 37);
+    cursor: pointer;
+    box-shadow: .2dvw .2dvw #000;
+}
+#pay:has(h2) button{
+    opacity: 1;
+}
+
+@media (min-width: 480px) { /* for  laptop, monitor, tablet, etc */
+    #cart-display strong{
+        font-size: clamp(28px, 4dvw, 50px);
+    }
+    #cart-display p{
+        font-size: clamp(1rem, 1.5dvw, 20px);
+    }
+    
+    .perfect-match{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top:5dvw;
+    }
+    .perfect-match img{
+        height: clamp(30px, 7dvw, 80px);
+        width: clamp(120px, 28dvw, 350px);
+    }
+    .perfect-match h2{
+        font-size: clamp(27px, 5.5dvw, 50px);
+    }
+    
+    .card-container{
+        margin: auto;
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1dvw;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-bottom: 10dvw;
+    }
+    .card{
+        width: clamp(140px, 18dvw, 200px);
+        padding-bottom: 10px;
+        height: clamp(195px, 29dvw, 245px); 
+        background: #fff;
+        border-radius: 5%;
+        overflow: clip;
+        border: 2px solid black;
+        
+    }
+    .card:has(input:checked){
+        height: auto;
+    }
+    .card img{
+        border-radius: 0;
+        width: clamp(140px, 18dvw, 200px);
+        height: clamp(100px, 15dvw, 150px);
+    }
+    .card span{
+        opacity: 0;
+        background-color: rgb(70,70,70);
+        color: #fff;
+        padding: 3px;
+        border-radius: 6px;
+        position: relative;
+        top: -15%;
+        right: -45%;
+        transition-duration: .2s;
+    }
+    .card a img{
+        margin-right: 5%;
+        padding: 3px;
+        border-radius: 50%;
+        float: right;
+        width: 20px;
+        height: 20px;
+    }
+    .card a img:hover{
+        border: 1px dashed #000;
+    }
+    .card a:hover + span{
+        opacity: 1;
+    }
+    .card input{
+        display: none;
+    }
+    #extra{
+        display: none;
+    }
+    .card label{
+        border-radius: 20%;
+        font-style: italic;
+        padding: 9px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-left: 10%;
+        margin-bottom: 10px;
+        background-color: rgb(210, 210, 210);
+        color: rgb(0,0,50);
+        transition-duration: .3s;
+    }
+    .card input:checked ~ #extra{
+        display: flex;
+    }
+    .card input:checked + i{
+        opacity: 0;
+    }
+    .card label:hover{
+        background-color: #fff;
+        color: var(--red-accent);
+        border: 1px dashed #000;
+        cursor: pointer;
+    }
+    .card h1{
+        display: flex;
+        font-size: 110%;
+        justify-content: space-around; 
+    }
+    .card p{
+        width: 120%;
+        padding: 5%;
+        padding-bottom: 0%;
+    }
+    .card i{
+        margin-left: 5px;
+        font-size: .8rem;
+        transition-duration: .2s;
+    }
+}
+
+@media (max-width: 480px) { /* for phones/similar sized devices */
+    #cart-display{
+        margin-top: 5dvw;
+    }
+    #cart-display p{
+        width: 80%;
+    }
+    #cart-display button{
+        border-radius: 3dvw;
+        padding: 1.5dvw;
+    }
+    
+    .perfect-match{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top:5dvw;
+    }
+    .perfect-match img{
+        height:7dvw;
+        width:30dvw;
+    }
+    .perfect-match h2{
+        position: absolute;
+        transform: translateY(6.5dvw);
+        font-size: clamp(20px, 7dvw, 28px);
+    }
+    
+    .card-container{
+        display: grid;
+        gap: 1dvw;
+        grid-auto-flow: column;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        overflow: scroll;
+    }
+    .card{
+        width: clamp(120px, 18dvw, 200px);
+        padding-bottom: 10px;
+        height: 185px;
+        background: #fff;
+        border-radius: 5%;
+        border: 2px solid black;
+        overflow: hidden;
+    }
+    .card:has(input:checked){
+        height: auto;
+    }
+    .card img{
+        border-radius: 0;
+        width: clamp(120px, 18dvw, 200px);
+        height: clamp(90px, 16dvw, 150px);
+    }
+    .card a img{
+        margin-right: 5%;
+        border-radius: 50%;
+        padding: 3px;
+        float: right;
+        border: 1px solid #000;
+        width: 17px;
+        height: 17px;
+    }
+    .card input{
+        display: none;
+    }
+    #extra{
+        display: none;
+    }
+    .card label{
+        border-radius: 20%;
+        font-style: italic;
+        padding: 9px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-left: 8%;
+        margin-bottom: 10px;
+        background-color: rgb(210, 210, 210);
+        color: rgb(0,0,50);
+        transition-duration: .3s;
+    }
+    .card input:checked ~ #extra{
+        display: flex;
+    }
+    .card input:checked + i{
+        opacity: 0;
+    }
+    .card label:hover{
+        background-color: #fff;
+        color: var(--red-accent);
+        border: 1px dashed #000;
+        cursor: pointer;
+    }
+    .card h1{
+        display: flex;
+        font-size: 110%;
+        justify-content: space-around; 
+    }
+    .card p{
+        width: 125%;
+        padding: 5%;
+        padding-bottom: 0%;
+    }
+    .card i{
+        margin-left: 5px;
+        font-size: .8rem;
+        transition-duration: .2s;
+    }
+}
+
+@media (max-width: 358px) { /* for small phones/devices */
+    .card-container{
+        display: grid;
+        gap: 1dvw;
+        grid-auto-flow: column;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        overflow: scroll;
+    }
+    .card{
+        width: clamp(100px, 17dvw, 180px);
+        padding-bottom: 10px;
+        height: 158px;
+        background: #fff;
+        border-radius: 5%;
+        border: 2px solid black;
+        overflow: hidden;
+    }
+    .card:has(input:checked){
+        height: auto;
+    }
+    .card img{
+        border-radius: 0;
+        width: clamp(100px, 17dvw, 180px);
+        height: clamp(70px, 15dvw, 130px);
+    }
+    .card a img{
+        margin-right: 4%;
+        border-radius: 50%;
+        padding: 3px;
+        float: right;
+        border: 1px solid #000;
+        width: 15px;
+        height: 15px;
+    }
+    .card input{
+        display: none;
+    }
+    #extra{
+        display: none;
+    }
+    .card label{
+        font-style: italic;
+        padding: 9px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-left: 5%;
+        margin-bottom: 10px;
+        color: rgb(0,0,50);
+        transition-duration: .3s;
+    }
+    .card input:checked ~ #extra{
+        display: flex;
+    }
+    .card input:checked + i{
+        opacity: 0;
+    }
+    .card label:hover{
+        color: var(--red-accent);
+        cursor: pointer;
+    }
+    .card h1{
+        display: flex;
+        font-size: 100%;
+        justify-content: space-around; 
+    }
+    .card p{
+        width: 125%;
+        padding: 5%;
+        padding-bottom: 0%;
+    }
+    .card i{
+        margin-left: 5px;
+        font-size: .6rem;
+        transition-duration: .2s;
+    }
+}
