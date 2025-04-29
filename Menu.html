@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="menu.css">
+        <title>Sai-Vum | Menu</title>
+    </head>
+
+    <body>
+        
+        <header class="mobile-check">
+            <img src="logo.png" alt = "logo">
+            <h1><i>Sai-Vum</i></h1>
+            
+            <input id="navtog" type="checkbox" >
+            <label for="navtog"><img class="mob-nav" src="mobile-menu.png"></label>
+                
+            <section class = "navbar">
+                <a href="Home_page.html">Home</a>
+                <a href="Menu.html">Menu</a>
+                <a href="cart.html">Cart</a>
+                <a href="our-way.html">Our way</a>
+                <a href="references.html">References</a>
+            </section>
+        </header>
+        
+        
+        
+        
+        <section class = "perfect-match">
+            <img src = "menu-leaf.png">
+            <h2>Find&nbsp<r>your</r>&nbspmatch</h2>
+            <img id= "reflected" src = "menu-leaf.png">
+        </section>
+        
+            <div class = "snacks">
+                <h1><r>Snacks</r></h1>
+            </div> 
+            
+        <section class="card-container">
+  
+            <div class="card">
+                <img src="https://media.istockphoto.com/id/1951863444/photo/indian-snacks-food-murukku-in-a-glass-bowl-on-black-background.jpg?s=612x612&w=0&k=20&c=a80cU5Lz0mFpVTam4DFbvS2nExVEDCluJMGO51OxcGo=">
+                <h1>Muruku</h1>
+                <a onclick="addToCart(this)"><img src="shop-cart.png"></a>
+                <label for="1">Info</label><input id="1" type="checkbox">
+                <p id="extra">
+                    Fried spicy rice & urad dal batter for <r>$3.99</r>.
+                </p>
+            </div>
+            
+            
+            <div class="card">
+                <img src="https://rakskitchen.net/wp-content/uploads/2010/10/ola-pakoda-feat.jpg">
+                <h1>Ribbon pakoda</h1>
+                <a onclick="addToCart(this)"><img src="shop-cart.png"></a>
+                <label for="2">Info</label><input id="2" type="checkbox">
+                <p id="extra">
+                    Fried spicy rice & horse gram batter for &nbsp <r>$3.99</r>. 
+                </p>
+            </div>
+            
+            <div class="card">
+                <img src="https://carveyourcraving.com/wp-content/uploads/2021/11/veg-puff-500x375.jpg">
+                <h1>Veg puff</h1>
+                <a onclick="addToCart(this)"><img src="shop-cart.png"></a>
+                <label for="3">Info</label><input id="3" type="checkbox">
+                <p id="extra">
+                    Spicy potatoes, peas, and carrots stuffed in 1 fluffy pastry shell for <r>$3.99</r>.
+                </p>
+            </div>
+            
+            <div class="card">
+                <img src="https://d3pi03i22pjpvc.cloudfront.net/images/product/parle_g_376gms.webp">
+                <h1>Parle G biscuit</h1>
+                <a onclick="addToCart(this)"><img src="shop-cart.png"></a>
+                <label for="4">Info</label><input id="4" type="checkbox">
+                <p id="extra">
+                    Classic sweet Inidan biscuits perfect for tea or coffee for <r>$2.50</r>.
+                </p>
+            </div>
+            
+            <div class="card">
+                <img src="https://traditionallymodernfood.com/wp-content/uploads/2021/11/mixture-recipe-south-indian-mixture-recipe-3.jpeg">
+                <h1>Madras mixture</h1>
+                <a onclick="addToCart(this)"><img src="shop-cart.png"></a>
+                <label for="5">Info</label><input id="5" type="checkbox">
+                <p id="extra">
+                    A mixture of grains, spices, and native nuts for <r>$2.19</r>.
+                </p>
+            </div>
+            
+            <div class="card">
+                <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2021/12/samosa-recipe.jpg">
+                <h1>Samosa</h1>
+                <a onclick="addToCart(this)"><img src="shop-cart.png"></a>
+                <label for="6">Info</label><input id="6" type="checkbox">
+                <p id="extra">
+                    Peas, spicy potatoes, and carrot in a hard fried shell for <r>$4.99</r>.
+                </p>
+            </div>
+            
+            <div class="card">
+                <img src="https://www.whiskaffair.com/wp-content/uploads/2020/07/Onion-Pakoda-2-1.jpg">
+                <h1>Onion pakoda</h1>
+                <a onclick="addToCart(this)"><img src="shop-cart.png"></a>
+                <label for="7">Info</label><input id="7" type="checkbox">
+                <p id="extra">
+                    Fried batter coated onion pieces with a kick for <r>$4.19</r>.
+                </p>
+            </div>
+            
+        </section>
+        
+        <div class = "main-meals">
+            <h1><r>Main meals</r></h1>
+        </div> 
+        <h2>Briyanis:</h2>
+        <p id="desc">Basmati rice energized by whole spices, topped with saffron, crispy onion, and fried cashews along with your choice of veg main subsistence. &nbsp<r>Always for $15.</r></p>
+    <!--types of briyanis: mixed vegatable, panner, jack-fruit, muchsroom, eggplant, aloo(potato)-->
+    <!--Need to REMOVE WATER MARKs LOOK CAREFULLY IDK HOW TO DO IT-->
+        <section class="card-container">
+            <div class="card">
+                <img src="https://cookingfromheart.com/wp-content/uploads/2017/09/Veg-Biryani-in-Pressure-Cooker-6.jpg">
+                <h1>Mixed veg briyani</h1>
+                <a onclick="addToCart(this)"><img src="shop-cart.png"></a>
+                <label for="8">Info</label><input id="8" type="checkbox">
+                <p id="extra">
+                    Main subsistence is a mix of carrots, peas, and potato<r>$15.00</r>.
+                </p>
+            </div>
+            
+            <div class="card">
+                <img src="https://ministryofcurry.com/wp-content/uploads/2023/10/paneer-biryani_-9.jpg">
+                <h1>Paneer briyani</h1>
+                <a onclick="addToCart(this)"><img src="shop-cart.png"></a>
+                <label for="9">Info</label><input id="9" type="checkbox">
+                <p id="extra">
+                    Main subsistence is paneer, a firmer yet soft Indian cottage chesse<r>$15.00</r>.
+                </p>
+            </div>
+            
+            
+            <div class="card">
+                <img src="https://www.easycookingwithmolly.com/wp-content/uploads/2019/05/kathal-biryani-jackfruit-biryani-480x480.jpg">
+                <h1>Jackfruit briyani</h1>
+                <a onclick="addToCart(this)"><img src="shop-cart.png"></a>
+                <label for="10">Info</label><input id="10" type="checkbox">
+                <p id="extra">
+                    Main subsistence is jackfruit, providing a similar texture to meat<r>$15.00</r>.
+                </p>
+            </div>
+            
+            <div class="card">
+                <img src="https://gingerskillet.com/wp-content/uploads/2021/03/mushroombiryani_F-500x375.jpg">
+                <h1>Mushroom briyani</h1>
+                <a onclick="addToCart(this)"><img src="shop-cart.png"></a>
+                <label for="11">Info</label><input id="11" type="checkbox">
+                <p id="extra">
+                    Main subsistence is mushroom, hitting the perfect umami note<r>$15.00</r>.
+                </p>
+            </div>
+            
+            <div class="card">
+                <img src="https://cookingfromheart.com/wp-content/uploads/2018/12/Baby-Potato-Hyderabadi-Dum-Biryani-3.jpg">
+                <h1>Aloo briyani</h1>
+                <a onclick="addToCart(this)"><img src="shop-cart.png"></a>
+                <label for="12">Info</label><input id="12" type="checkbox">
+                <p id="extra">
+                    Main subsistence is aloo(potato) that fills you up in an instant with flavor<r>$15.00</r>.
+                </p>
+            </div>
+            
+        </section> 
+        
+        <h2 id="">Dosa</h2>
+        <p id="desc">An thin and crispy Indian crepe with your choice of filling made from fermented rice and dal batter, served with sambar, coconut chutney, and tomato chutney.</p>
+        <!--types of dosas: sesame, ghee, mysore masala, podi, set, cheese, ragi, millet, adai, neer-->
+        <section class="card-container">
+            
+            <div class="card">
+                <img src="https://www.awesomecuisine.com/wp-content/uploads/2009/06/Plain-Dosa.jpg">
+                <h1>Sesame dosa</h1>
+                <a onclick="addToCart(this)"><img src="shop-cart.png"></a>
+                <label for="13">Info</label><input id="13" type="checkbox">
+                <p id="extra">
+                    Sesame oil is drizzled on the dosa's inside, providing a crispy texture and nutty flavor for <r>$9.99</r>.
+                </p>
+            </div>
+            
+            <div class="card">
+                <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2016/09/ghee-roast-dosa-recipe-2.jpg">
+                <h1>Ghee dosa</h1>
+                <a onclick="addToCart(this)"><img src="shop-cart.png"></a>
+                <label for="14">Info</label><input id="14" type="checkbox">
+                <p id="extra">
+                    Ghee is spread on the dosa's inside, giving a golden brown look with a rich flavor for <r>$10.99</r>.
+                </p>
+            </div>
+            
+            <div class="card">
+                <img src="https://static.toiimg.com/thumb/54289752.cms?imgsize=495844&width=800&height=800">
+                <h1>Mysore masala dosa</h1>
+                <a onclick="addToCart(this)"><img src="shop-cart.png"></a>
+                <label for="15">Info</label><input id="15" type="checkbox">
+                <p id="extra">
+                    A ghee dosa filled with spicy sautéd potatoes and spicy red chilli chutney for <r>$13.99</r>.
+                </p>
+            </div>
+            
+            <div class="card">
+                <img src="https://brassy.in/ammachiidlydosai/wp-content/uploads/2023/01/Podi-Dosa-300x300.png">
+                <h1>Podi dosa</h1>
+                <a onclick="addToCart(this)"><img src="shop-cart.png"></a>
+                <label for="16">Info</label><input id="16" type="checkbox">
+                <p id="extra">
+                    A ghee dosa filled with savory and spicy podi powder made from lentils, spices, and chilies for <r>$10.99</r>.
+                </p>
+            </div>
+            
+            <div class="card">
+                <img src="https://maayeka.com/wp-content/uploads/2013/08/set-dosa-.jpg">
+                <h1>Set dosa</h1>
+                <a onclick="addToCart(this)"><img src="shop-cart.png"></a>
+                <label for="17">Info</label><input id="17" type="checkbox">
+                <p id="extra">
+                    A thick and filling sesame dosa for <r>$10.99</r>.
+                </p>
+            </div>
+            
+            <div class="card">
+                <img src="https://www.cookshideout.com/wp-content/uploads/2017/06/Sprouted-Ragi-Dosa_FI.jpg">
+                <h1>Ragi dosa</h1>
+                <a onclick="addToCart(this)"><img src="shop-cart.png"></a>
+                <label for="18">Info</label><input id="18" type="checkbox">
+                <p id="extra">
+                    A slightly thicker sesame dosa instead made from ragi, an extremely healthy millet for anyone <r>$12.99</r>.
+                </p>
+            </div>
+            
+            <div class="card">
+                <img src="https://3.bp.blogspot.com/-eBkU3byMgj8/UqzxEebWNZI/AAAAAAAACmA/8VMk1luqpOc/s1600/Crisp_Kambu_Dosa0.jpg">
+                <h1>Millet dosa</h1>
+                <a onclick="addToCart(this)"><img src="shop-cart.png"></a>
+                <label for="19">Info</label><input id="19" type="checkbox">
+                <p id="extra">
+                    A sesame dosa made with a batter compsed of millets such as foxtail, barnyard, and kodo millet for <r>$13.99</r>.
+                </p>
+            </div>
+            
+            <div class="card">
+                <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2022/03/cheese-dosa.jpg">
+                <h1>Cheese dosa</h1>
+                <a onclick="addToCart(this)"><img src="shop-cart.png"></a>
+                <label for="20">Info</label><input id="20" type="checkbox">
+                <p id="extra">
+                    A ghee dosa filled a layer of cheese (mozzarella), green chilies, and spicy chili chutney for <r>$13.99</r>.
+                </p>
+            </div>
+            
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcIj1xGXOn2_s4M5Ea98aLF9pWSof_8jFAnaHYeexwmk4j1pRJ:https://www.indianhealthyrecipes.com/wp-content/uploads/2021/07/adai-recipe-adai-dosa-500x375.jpg&s">
+                <h1>Adai dosa</h1>
+                <a onclick="addToCart(this)"><img src="shop-cart.png"></a>
+                <label for="21">Info</label><input id="21" type="checkbox">
+                <p id="extra">
+                    A thick yet crispy ghee dosa with a high amount of nutritious lentils in the batter <r>$10.99</r>.
+                </p>
+            </div>
+            
+            <div class="card">
+                <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2021/12/neer-dosa-recipe.jpg">
+                <h1>Neer dosa</h1>
+                <a onclick="addToCart(this)"><img src="shop-cart.png"></a>
+                <label for="22">Info</label><input id="22" type="checkbox">
+                <p id="extra">
+                    A thin and soft sesame dosa made from just rice, water, and salt for <r>$8.99</r>.
+                </p>
+            </div>
+        </section>        
+
+        <h2>Flatbreads:</h2>
+        <p id="desc">All of these flatbreads are perfect for any curry.
+        <!--types of flatbreads: poori(reg, dal, aloo), paratha(malabar, methi, kootu, aloo, gobi, layered), naan(garlic, butter, bullet), chapatis(reg, bajra, missi)-->
+        <section class="card-container">
+            
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3e8mM1w9hSrcRR4iiyyWqagRJvGBNHagfFDXlUa6cAbTlL9k:https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Fluffy_Poori.JPG/1200px-Fluffy_Poori.JPG&s">
+                <h1>Regular poori</h1>
+                <a onclick="addToCart(this)"><img src="shop-cart.png"></a>
+                <label for="23">Info</label><input id="23" type="checkbox">
+                <p id="extra">
+                    A puffed-up deep fried unleavened flatbread with light, airy feel for <r>$3.99</r>.
+                </p>
+            </div>
+            
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoY0U3J9HBQ5Tq1QIkIQTT7rmN4mhxrhdayh7c92KJpl8aLn0:https://static.toiimg.com/thumb/55051886.cms%3Fwidth%3D1200%26height%3D900&s">
+                <h1>Dal poori</h1>
+                <a onclick="addToCart(this)"><img src="shop-cart.png"></a>
+                <label for="24">Info</label><input id="24" type="checkbox">
+                <p id="extra">
+                    A regular poori stuffed with chana dal, chillies, and garlic pieces for <r>$6.99</r>.
+                </p>
+            </div>
+            
+            <div class="card">
+                <img src="https://www.archanaskitchen.com/images/archanaskitchen/1-Author/Waagmi_Soni/aloo_masala_puri.jpg">
+                <h1>Aloo poori</h1>
+                <a onclick="addToCart(this)"><img src="shop-cart.png"></a>
+                <label for="25">Info</label><input id="25" type="checkbox">
+                <p id="extra">
+                    A regular poori stuffed with spicy aloo(potato) for <r>$5.78</r>.
+                </p>
+            </div>
+            
+            <div class="card">
+                <img src="https://wfg32p.s3.amazonaws.com/media/dishes/paratha_5410-reg.jpg">
+                <h1>Regular Parotta</h1>
+                <a onclick="addToCart(this)"><img src="shop-cart.png"></a>
+                <label for="26">Info</label><input id="26" type="checkbox">
+                <p id="extra">
+                     A multilayered unleavened flatbread with a unique texture for <r>$3.99</r>.
+                </p>
+            </div>
+            
+            <div class="card">
+                <img src="https://cdn.apartmenttherapy.info/image/upload/v1644196803/k/Photo/Recipe%20Ramp%20Up/2022-02-Paratha/paratha-stacked-top_view.jpg">
+                <h1>Malabar Parotta</h1>
+                <a onclick="addToCart(this)"><img src="shop-cart.png"></a>
+                <label for="27">Info</label><input id="27" type="checkbox">
+                <p id="extra">
+                     A delicious, flaky and crispy flatbread with many layers for <r>$4.99</r>.
+                </p>
+            </div>
+            
+            <div class="card">
+                <img src="https://www.funfoodfrolic.com/wp-content/uploads/2022/02/Thepla-1.jpg">
+                <h1>Methi Parotta</h1>
+                <a onclick="addToCart(this)"><img src="shop-cart.png"></a>
+                <label for="28">Info</label><input id="28" type="checkbox">
+                <p id="extra">
+                     A regular parotta infused with methi(fenugreek seeds) for <r>$5.99</r>.
+                </p>
+            </div>
+            
+            <div class="card">
+                <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2021/06/kothu-parotta.jpg">
+                <h1>Kothu Parotta</h1>
+                <a onclick="addToCart(this)"><img src="shop-cart.png"></a>
+                <label for="29">Info</label><input id="29" type="checkbox">
+                <p id="extra">
+                    A shredded regular parotta sautéed with spicy masala, onions, and coriander for <r>$7.99</r>.
+                </p>
+            </div>
+            
+            <div class="card">
+                <img src="https://lh6.googleusercontent.com/proxy/umlZlcu6rMjAAp1XbqfVw3Dafcvf8q4plIWHPQ8ASwKz62EMu8SA3rdEgNAQSfNr42TySd2ItcQwdB98TRPZidonT0RBhy_gH4M">
+                <h1>Aloo gobi Parotta</h1>
+                <a onclick="addToCart(this)"><img src="shop-cart.png"></a>
+                <label for="30">Info</label><input id="30" type="checkbox">
+                <p id="extra">
+                    A regular paratha stuffed with spicy potato and cauliflower for <r>$6.99</r>.
+                </p>
+            </div>
+            
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIkHzGwhvo1VU-6B5oP-iNMyutrOehciFgcTl3ub9wqUkug1Y:https://www.asparkleofgenius.com/wp-content/uploads/2023/08/authentic-naan-scaled.jpg&s">
+                <h1>Garlic naan</h1>
+                <a onclick="addToCart(this)"><img src="shop-cart.png"></a>
+                <label for="31">Info</label><input id="31" type="checkbox">
+                <p id="extra">
+                    A leavened and fluffy flatbread topped with garlic bits and butter for <r>$3.99</r>.
+                </p>
+            </div>
+            
+            <div class="card">
+                <img src="https://www.sprinklesandsprouts.com/wp-content/uploads/2021/06/Bullet-Naan-SQ.jpg">
+                <h1>Bullet naan</h1>
+                <a onclick="addToCart(this)"><img src="shop-cart.png"></a>
+                <label for="32">Info</label><input id="32" type="checkbox">
+                <p id="extra">
+                     Spicy garlic naan stuffed with green chilies and corriander for <r>$5.99</r>.
+                </p>
+            </div>
+            
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtIeIQWNyJJsslWWDYP5bULZCz-AbbXnBzyTDqZVKdyGkvSlw:https://upload.wikimedia.org/wikipedia/commons/f/fe/2_Chapati_warm_and_ready_to_be_eaten.jpg&s">
+                <h1>Regular chapati</h1>
+                <a onclick="addToCart(this)"><img src="shop-cart.png"></a>
+                <label for="33">Info</label><input id="33" type="checkbox">
+                <p id="extra">
+                     Made with atta(wheat flour) and water for <r>$3.99</r>.
+                </p>
+            </div>
+            
+            <div class="card">
+                <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2013/03/bajra-bhakri-recipe-2.jpg">
+                <h1>Bajra chapati</h1>
+                <a onclick="addToCart(this)"><img src="shop-cart.png"></a>
+                <label for="34">Info</label><input id="34" type="checkbox">
+                <p id="extra">
+                      A nutty chapati made with pearl millet for <r>$3.80</r>.
+                </p>
+            </div>
+            
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1lVM_uNzYs7Gzo237vFGHgMX4q-QKo_4iWIBcL_miejt7ihAx:https://www.vegrecipesofindia.com/wp-content/uploads/2016/01/missi-roti-recipe-1a.jpg&s">
+                <h1>Missi chapati</h1>
+                <a><img src="shop-cart.png"></a>
+                <label for="35">Info</label><input id="35" type="checkbox">
+                <p id="extra">
+                       A soft and supple chapati made from besan flour for <r>$3.99</r>.
+                </p>
+            </div>
+            
+        </section>   
+        
+        <h2>Curries:</h2>
+        <p id="desc">Comes with a bowl of sona masori rice. It is recommended to get some kind of flatbread with each of these curries.&nbsp<r>Always for $12</r>. </p>
+        <section class="card-container">
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDc6mwHg792KuUsQRJ6y0FnQA3Np1xRtYeUJA2FQ_qbQjRBz0:https://seitansociety.com/wp-content/uploads/2021/10/PalakPaneer1280x903.jpg&s">
+                <h1>Palak paneer</h1>
+                <a onclick="addToCart(this)"><img src="shop-cart.png"></a>
+                <label for="36">Info</label><input id="36" type="checkbox">
+                <p id="extra">
+                       A mildly spiced spinach based curry with paneer chunks for <r>12.00</r>.
+                </p>
+            </div>
+            
+            <div class="card">
+                <img src="https://silkroadrecipes.com/wp-content/uploads/2021/12/Gobi-Masala-Cauliflower-Curry-square.jpg">
+                <h1>Gobi masala</h1>
+                <a onclick="addToCart(this)"><img src="shop-cart.png"></a>
+                <label for="37">Info</label><input id="37" type="checkbox">
+                <p id="extra">
+                       Masala coated gobi(cauliflower) pieces in a creamy tomato based curry for <r>12.00</r>.
+                </p>
+            </div>
+            
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD9dZAuYX02V_qyt6UYfvnBkIGhCWz-UP_t6D3flfky4xVFpX8:https://www.cookwithkushi.com/wp-content/uploads/2023/05/quick-best-aloo-vindaloo.jpg&s">
+                <h1>Aloo vindaloo</h1>
+                <a onclick="addToCart(this)"><img src="shop-cart.png"></a>
+                <label for="38">Info</label><input id="38" type="checkbox">
+                <p id="extra">
+                       This has a bold and spicy flavor with potato pieces, a lot of chilies, and other aromatic spices for <r>12.00</r>.
+                </p>
+            </div>
+            
+            <div class="card">
+                <img src="https://www.simplyrecipes.com/thmb/Th15MyYH39AyYVe3Yy1uuXMp1E0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Matar-Paneer-LEAD-04-54973561cdb944f587165ecf161acc83.jpg">
+                <h1>Mattar paneer</h1>
+                <a onclick="addToCart(this)"><img src="shop-cart.png"></a>
+                <label for="39">Info</label><input id="39" type="checkbox">
+                <p id="extra">
+                       Green peas and paneer in a rich and creamy tomato-based curry for <r>12.00</r>.
+                </p>
+            </div>
+            
+            <div class="card">
+                <img src="https://www.funfoodfrolic.com/wp-content/uploads/2023/04/Dal-Makhani-Blog.jpg">
+                <h1>Dal makhani</h1>
+                <a onclick="addToCart(this)"><img src="shop-cart.png"></a>
+                <label for="40">Info</label><input id="40" type="checkbox">
+                <p id="extra">
+                       Slow cooked kidney beans and black lentils in a rich and creamy tomato base for <r>12.00</r>.
+                </p>
+            </div>
+            
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvZgVnGzjk8vgjsHNwWuC0-WYKUl_3j9ql1Gr_79R2j55pfn_G:https://carveyourcraving.com/wp-content/uploads/2021/09/Best-Malai-Kofta-recipe.jpg&s">
+                <h1>Malai kofta</h1>
+                <a onclick="addToCart(this)"><img src="shop-cart.png"></a>
+                <label for="41">Info</label><input id="41" type="checkbox">
+                <p id="extra">
+                       Fried kofta(potato paneer balls) in a sweet and savory cashew based sauce for <r>12.00</r>.
+                </p>
+            </div>
+            
+        </section>
+        
+        
+        <h2>Soups:</h2>
+        <section class ="card-container">
+            
+            <div class="card">
+                <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2018/11/rasam-recipe.webp">
+                <h1>Rasam</h1>
+                <a onclick="addToCart(this)"><img src="shop-cart.png"></a>
+                <label for="42">Info</label><input id="42" type="checkbox">
+                <p id="extra">
+                       A tarty and spicy soup deriving its unique and bold flavors from tamarind and chilies for <r>$7.99</r>.
+                </p>
+            </div>
+            
+            
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjA-8urXsW25iXX6RdCGxjHczHncMiHQKOJRlFQKxq_hkXhWWG:https://www.indianhealthyrecipes.com/wp-content/uploads/2019/06/vegetable-soup-680x510.webp&s">
+                <h1>Indo-chinese vegetable soup</h1>
+                <a onclick="addToCart(this)"><img src="shop-cart.png"></a>
+                <label for="43">Info</label><input id="43" type="checkbox">
+                <p id="extra">
+                       A warm soup containing Indian and Chinese heat and vegetables for <r>$8.99</r>.
+                </p>
+            </div>
+            
+            <div class="card">
+                <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2021/12/dal-soup-recipe.jpg">
+                <h1>Dal soup</h1>
+                <a onclick="addToCart(this)"><img src="shop-cart.png"></a>
+                <label for="44">Info</label><input id="44" type="checkbox">
+                <p id="extra">
+                       A soup made from protein rich dal with a slight kick for <r>$7.99</r>.
+                </p>
+            </div>
+            
+        </section>
+        <script src="java.js"></script>
+        <div class = "Beverages">
+            <h1><r>Beverages</r></h1>
+        </div>
+        <section class = "card-container">
+            <div class="card">
+                <img src="https://www.theflavorbender.com/wp-content/uploads/2021/01/Masala-Chai-9998-2.jpg">
+                <h1>Masala chai</h1>
+                <a onclick="addToCart(this)"><img src="shop-cart.png"></a>
+                <label for="45">Info</label><input id="45" type="checkbox">
+                <p id="extra">
+                       A classic in all Indian homes with a comforting aromatic taste for <r>$2.99</r>.
+                </p>
+            </div>
+            
+            <div class="card">
+                <img src="https://www.whiskaffair.com/wp-content/uploads/2021/01/Filer-Coffee-2-3.jpg">
+                <h1>Filter coffee</h1>
+                <a onclick="addToCart(this)"><img src="shop-cart.png"></a>
+                <label for="46">Info</label><input id="46" type="checkbox">
+                <p id="extra">
+                        A classic made with a traditional brewing process for a strong coffee at <r>$2.99</r>.
+                </p>
+            </div>
+            
+            <div class="card">
+                <img src="https://www.instacart.com/image-server/1864x1864/www.instacart.com/assets/domains/product-image/file/large_032b74db-d0e1-44b2-8b1f-5d6e0f5ffbf7.jpg">
+                <h1>Thumbs up</h1>
+                <a onclick="addToCart(this)"><img src="shop-cart.png"></a>
+                <label for="47">Info</label><input id="47" type="checkbox">
+                <p id="extra">
+                        A very popular soft drink in India for <r>$2.50</r>.
+                </p>
+            </div>
+            
+            <div class="card">
+                <img src="https://bfasset.costco-static.com/U447IH35/as/pvbt7c83fsn8nzjqh8jqcgmq/1147352-847__3?auto=webp&amp;format=jpg&width=600&height=600&fit=bounds&canvas=600,600">
+                <h1>Bottle water</h1>
+                <a onclick="addToCart(this)"><img src="shop-cart.png"></a>
+                <label for="48">Info</label><input id="48" type="checkbox">
+                <p id="extra">
+                        Refreshing cold bottled water <r>$1.50</r>.
+                </p>
+            </div>
+            
+            
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy8nV_b8N_tLDMMt6nmjuKOld-gt9UbeooTEWbMG69DHN3jRH0:https://www.yellowthyme.com/wp-content/uploads/2023/03/Mango-Lassi-08589.jpg&s">
+                <h1>Mango lassi</h1>
+                <a onclick="addToCart(this)"><img src="shop-cart.png"></a>
+                <label for="49">Info</label><input id="49" type="checkbox">
+                <p id="extra">
+                    A cooling, creamy, refreshing drink made from mangoes, milk, and yogurt for <r>$4.50</r>.
+                </p>
+            </div>
+            
+            
+            <div class="card">
+                <img src="https://www.sharmispassions.com/wp-content/uploads/2021/11/jigarthanda-recipe10.jpg">
+                <h1>Jigarthanda</h1>
+                <a onclick="addToCart(this)"><img src="shop-cart.png"></a>
+                <label for="50">Info</label><input id="50" type="checkbox">
+                <p id="extra">
+                    A refreshment whose cooling effect can be felt down to the heart for <r>$4.78</r>.
+                </p>
+            </div>
+            
+        </section>
+        
+        <div class = "Desserts">
+            <h1><r>Desserts</r></h1>
+        </div>
+        <section class = "card-container">
+            
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1lZWLvznPbQfYUvr48s5w4tW52VaUrxovv8QgPdMN_iiSaDvK:https://www.honeywhatscooking.com/wp-content/uploads/2020/04/Gajar-ka-Halwa-Gajrela-Indian-Carrot-Pudding20.jpg&s">
+                <h1>Gajar ja halwa</h1>
+                <a onclick="addToCart(this)"><img src="shop-cart.png"></a>
+                <label for="51">Info</label><input id="51" type="checkbox">
+                <p id="extra">
+                     Grated carrots, milk, nuts, and sugar create a perfect sweet end for <r>$3.25</r>.
+                </p>
+            </div>
+                        
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrDfKTpMqFGWtzwBYCEF8qz4m_OmND_J-_mAjw8pDkSJd4e62V:https://blog.swiggy.com/wp-content/uploads/2024/07/Image-1_Rice-Kheer-1024x538.png&s">
+                <h1>Kheer</h1>
+                <a onclick="addToCart(this)"><img src="shop-cart.png"></a>
+                <label for="52">Info</label><input id="52" type="checkbox">
+                <p id="extra">
+                     Sweet rice pudding made with milk, nuts, sugar, and cardamom for <r>$3.50</r>.
+                </p>
+            </div>
+                        
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeNEEVifwjlxwe9eTwCkVoGU8q7RHarf8XriUj6QunyBezdvs:https://www.seriouseats.com/thmb/vO-HM7y3sb11_kNpu_AwnUJ82WQ%3D/1500x0/filters:no_upscale%28%29:max_bytes%28150000%29:strip_icc%28%29/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__2020__11__20201109-gulab-jamuns-nik-sharma-9-ad652cf623834c1aaff916678aba47f1.jpg&s">
+                <h1>Gulab jamun</h1>
+                <a onclick="addToCart(this)"><img src="shop-cart.png"></a>
+                <label for="53">Info</label><input id="53" type="checkbox">
+                <p id="extra">
+                    Fried milk based balls in a sweet sugar syrup for <r>$4.50</r>.
+                </p>
+            </div>
+            
+                        
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcI1XjKVSKcXOhsVgkTe_W9QIM6Xph9j-3jtjS9HuX8YbRpR8:https://dundas.leelaindianfoodbar.ca/wp-content/uploads/2024/11/Rasmalai-1024x683.webp&s">
+                <h1>Rasmalai</h1>
+                <a onclick="addToCart(this)"><img src="shop-cart.png"></a>
+                <label for="54">Info</label><input id="54" type="checkbox">
+                <p id="extra">
+                    Soft paneer balls swimming in sweet milk for <r>$4.40</r>.
+                </p>
+            </div>
+            
+        </section>
+        <script src="Java.js"></script>
+        
+        
+        
+                <footer>
+            <div class="footer-contain">
+                <div class="footer-about-us">
+                    <h3>About us:</h3>
+                    <p> We only make pure veg & vegan food.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Links:</h3>
+                    <a href="Home_page.html">Home</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="cart.html">Cart</a>
+                    <a href="our-way.html">Our way</a>
+                    <a href="#ref">References</a>
+                </div>
+                <div class="footer-details">
+                    <h3>Details:</h3>
+                    <p>📌 9277 Old Keene Mill Rd, Burke, VA 22015</p>
+                    <p>Hours: 8am - 10pm</p>
+                </div>
+                <div class="footer-contact-us-d">
+                    <h3>Contact us</h3>
+                    <p>📞  (123)-456-7890</p>
+                    <p>✉️ SaiVumYum@gmail.com</p>
+                    <div class="socials-container">
+                        <a href="www.youtube.com">
+                            <img src="youtube.png">
+                            <p>youtube</p>
+                        </a>
+                        <a href="www.facebook.com">
+                            <img src="facebook.png">
+                            <p>facebook</p>
+                        </a>
+                        <a href="www.instagram.com/sai.vum?igsh=MWk3NXpuMXA3MGd5">
+                            <img src="insta.png">
+                            <p>instagram</p>
+                        </a>
+                        <a href="www.tiktok.com">
+                            <img src="tiktok.png">
+                            <p>tiktok</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-contact-us">
+                <h3>Contact us</h3>
+                <p>📞  (123)-456-7890</p>
+                <p>✉️ SaiVumYum@gmail.com</p>
+                <div class="socials-container">
+                    <a href="www.youtube.com">
+                        <img src="youtube.png">
+                        <p>youtube</p>
+                    </a>
+                    <a href="www.facebook.com">
+                        <img src="facebook.png">
+                        <p>facebook</p>
+                    </a>
+                    <a href="www.instagram.com/sai.vum?igsh=MWk3NXpuMXA3MGd5">
+                        <img src="insta.png">
+                        <p>instagram</p>
+                    </a>
+                    <a href="www.tiktok.com">
+                        <img src="tiktok.png">
+                        <p>tiktok</p>
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+        
+    </body>
+</html>
